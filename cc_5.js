@@ -25,3 +25,20 @@ let order = {
 };
 //Add a method inside object
 order.displayOrder();
+
+// task 3: Shopping Cart
+
+//Declaring array with three product names
+let cartItems = ["Laptop", "Mouse", "Keyboard"];
+
+//Add a new product to the cart
+cartItems.push("Monitor");
+//Remove the last item
+cartItems.pop();
+//Add item at the beginning
+cartItems.unshift("Tablet");
+//Remove first item
+cartItems.shift();
+
+//Logging final array
+console.log(`Final Cart Items: ${cartItems}`);
