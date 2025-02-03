@@ -64,3 +64,14 @@ let availableProducts = inventory.filter(quantity => quantity > 0);
 
 //Logging filtered array
 console.log(`Available Products: ${availableProducts}`);
+
+// task 6: Revenue Calculation
+
+//Declaring an array
+let sales = [500, 300, 200, 400];
+
+//Calculating total revenue
+let totalRevenue = sales.reduce((total, sale) => total + sale, 0);
+
+//Logging total revenue
+console.log(`Total Revenue:$ ${totalRevenue}`);
