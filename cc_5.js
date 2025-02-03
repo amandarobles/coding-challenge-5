@@ -11,3 +11,17 @@ let customer = {
 console.log(`Name: ${customer.name}`);
 console.log(`Age: ${customer.age}`);
 console.log(`Email: ${customer.email}`);
+
+// task 2: Order Details
+
+//Declaring object order with properies
+let order = {
+    orderId: 12345,
+    totalAmount: 150,
+    status: "Processing",
+    displayOrder: function(){
+        console.log(`Order ID: ${this.orderId}, Total Amount: ${this.totalAmount}, Status: ${this.status}`);
+    }
+};
+//Add a method inside object
+order.displayOrder();
