@@ -104,3 +104,11 @@ const applyDiscount = function(price, discount){
 };
 //Logging discounted price
 console.log(`Discounted Price:$ ${applyDiscount(100, 15)}`);
+
+// task 10: Loyalty Points)
+
+//Writing an arrow function/Return 1 point per $10
+const calculatePoints = purchaseAmount => Math.floor(purchaseAmount / 10);
+
+//Logging result
+console.log(`Points Earned: ${calculatePoints(250)}`);
