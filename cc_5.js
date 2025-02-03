@@ -53,3 +53,14 @@ let discountedPrices = prices.map(price => price *0.9);
 
 //Logging the new discounted prices
 console.log(`Discounted Prices: ${discountedPrices}`);
+
+// task 5: Product Availability
+
+//Declaring an array with five product quantities
+let inventory = [5, 0, 12, 8, 0];
+
+//Remove products with zero stock
+let availableProducts = inventory.filter(quantity => quantity > 0);
+
+//Logging filtered array
+console.log(`Available Products: ${availableProducts}`);
