@@ -95,3 +95,12 @@ function calculateTax(amount, taxRate){
 }
 //Logging
 console.log(`Tax on $200 at 10%:$ ${calculateTax(200, 0.1)}`);
+
+// task 9: Discount Application
+
+//Declaring function expression/Returning discounted price
+const applyDiscount = function(price, discount){
+    return price - (price * discount / 100);
+};
+//Logging discounted price
+console.log(`Discounted Price:$ ${applyDiscount(100, 15)}`);
