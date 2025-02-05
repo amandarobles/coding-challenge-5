@@ -1,16 +1,16 @@
 // task 1: Customer Profile
 
 //Declaring object customers with properties
-let customerID = {
+let customer = {
     name: "John Doe",
     age: 35,
     email: "john.doe@email.com"
 };
 
 //Logging properties
-console.log(`Name: ${customer.name}`);
-console.log(`Age: ${customer.age}`);
-console.log(`Email: ${customer.email}`);
+console.log(`Customer Name: ${customer.name}`);
+console.log(`Customer Age: ${customer.age}`);
+console.log(`Customer Email: ${customer.email}`);
 
 // task 2: Order Details
 
@@ -79,10 +79,10 @@ console.log(`Total Revenue:$${totalRevenue}`);
 // task 7: Customer Search
 
 //Declaring an array
-let customer = ["Alice", "Bob", "Charlie", "David"];
+let customers = ["Alice", "Bob", "Charlie", "David"];
 
 //Locating the customer
-let foundCustomer = customers.find(customer => customer === "Charlie");
+let foundCustomer = customers.find(customers => customers === "Charlie");
 
 //Logging the result
 console.log(`Found Customer: ${foundCustomer}`);
