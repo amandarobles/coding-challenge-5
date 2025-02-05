@@ -1,8 +1,8 @@
 // task 1: Customer Profile
 
 //Declaring object customers with properties
-let customer = {
-    name: "John Doe"
+let customerID = {
+    name: "John Doe",
     age: 35,
     email: "john.doe@email.com"
 };
@@ -20,7 +20,7 @@ let order = {
     totalAmount: 150,
     status: "Processing",
     displayOrder: function(){
-        console.log(`Order ID: ${this.orderId}, Total Amount: ${this.totalAmount}, Status: ${this.status}`);
+        console.log(`Order ID: ${this.orderId}, Total Amount: $${this.totalAmount}, Status: ${this.status}`);
     }
 };
 //Add a method inside object
@@ -49,7 +49,7 @@ console.log(`Final Cart Items: ${cartItems}`);
 let prices = [100, 200, 300];
 
 //Applying a 10% discount
-let discountedPrices = prices.map(price => price *0.9);
+let discountedPrices = prices.map(price => price * 0.9);
 
 //Logging the new discounted prices
 console.log(`Discounted Prices: ${discountedPrices}`);
@@ -74,7 +74,7 @@ let sales = [500, 300, 200, 400];
 let totalRevenue = sales.reduce((total, sale) => total + sale, 0);
 
 //Logging total revenue
-console.log(`Total Revenue:$ ${totalRevenue}`);
+console.log(`Total Revenue:$${totalRevenue}`);
 
 // task 7: Customer Search
 
@@ -94,7 +94,7 @@ function calculateTax(amount, taxRate){
     return amount * taxRate;
 }
 //Logging
-console.log(`Tax on $200 at 10%:$ ${calculateTax(200, 0.1)}`);
+console.log(`Tax on $200 at 10%:$${calculateTax(200, 0.1)}`);
 
 // task 9: Discount Application
 
@@ -103,7 +103,7 @@ const applyDiscount = function(price, discount){
     return price - (price * discount / 100);
 };
 //Logging discounted price
-console.log(`Discounted Price:$ ${applyDiscount(100, 15)}`);
+console.log(`Discounted Price:$${applyDiscount(100, 15)}`);
 
 // task 10: Loyalty Points)
 
